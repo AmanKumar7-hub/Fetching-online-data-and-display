@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+#search-container {
+  margin: 1em 0;
+}
+
+
+.button-value {
+  border: 2px solid #6759ff;
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: #6759ff;
+  cursor: pointer;
+}
+.active {
+  background-color: #6759ff;
+  color: #ffffff;
+}
+#products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+}
+.card {
+  background-color: #ffffff;
+  max-width: 18em;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+}
+.image-container {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+}
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+.container h5 {
+  font-weight: 500;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card {
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #products {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
+
+#search{
+  border: 2px solid #6759ff;
+
+  border-radius: 5px;
+  background-color: transparent;
+  color: #6759ff;
+  cursor: pointer;
+}
+#search-container{
+  float:right;
+  color:white;
+}
+      </style>
+  </head>
+  <body>
+    <div class="wrapper">
+
+          <select id="ratings" >
+            <option  value="">Ratings</option>
+            <option value="0">0-1</option>
+            <option value="1">1-2</option>
+            <option  value="2">2-3</option>
+            <option value="3">3-4</option>
+            <option value="4">4-5</option>
+          </select>
+          <select id="discount">
+            <option value="">Discount</option>
+            <option value="0">0-10 %</option>
+            <option value="10">10-20%</option>
+
+          </select>
+
+          <select id="price">
+            <option value="">Price</option>
+            <option value="0">0-1000</option>
+            <option value="1000">Above 1000</option>
+          </select>
+          <select id="brand">
+            <option value="">Brand</option>
+          </select>
+          <select id="category">
+            <option value="">Category</option>
+          </select>
+
+
+          <div id="products">
+
+          </div>
+        </div>
+    <!-- This is new commen
+     <div class="container" id="contain">
+       <div class="navbar" id="nav">
+         </div>
+
+         <div class="" id="element">
+           </div>
+       </div>
+       -->
+  </body>
+  <script src="new.js">
+    </script>
+</html>
